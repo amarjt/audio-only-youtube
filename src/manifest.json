@@ -17,7 +17,6 @@
     "tabs",
     "webRequest",
     "storage",
-    "*://www.youtube.com/*",
     "*://music.youtube.com/*",
     "*://*.googlevideo.com/*"
   ],
@@ -26,7 +25,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://www.youtube.com/*", "*://music.youtube.com/*"],
+      "matches": ["*://music.youtube.com/*"],
       "js": ["js/content-script.js"],
       "css": ["css/content-script.css"],
       "run_at": "document_start",
